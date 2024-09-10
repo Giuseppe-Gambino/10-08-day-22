@@ -438,8 +438,7 @@ footer a {
 /* pulsanti */
 .pulsante {
   position: fixed;
-  width: 70px;
-  height: 70px;
+
   padding: 10px;
   margin: 10px;
   cursor: pointer;
@@ -490,12 +489,17 @@ footer a {
 
   .btnDue {
     top: 80px;
+    bottom: initial;
   }
 
   .btnTre {
     top: 0;
+    bottom: initial;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .pulsante {
+    max-height: 70px;
+  }
 }
